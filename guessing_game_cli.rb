@@ -8,7 +8,7 @@ def run_guessing_game
   puts("Guess a number 1 through 6");
   choice = gets.chomp;
   p choice;
-  if choice  == ran_num.to_s then
+  if choice.to_num  == ran_num then
     puts("You guessed the correct number!");
   elsif choice == 'exit' then
     puts("Goodbye!");
