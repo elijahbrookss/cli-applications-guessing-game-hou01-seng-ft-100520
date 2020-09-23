@@ -7,13 +7,12 @@ def run_guessing_game
   p ran_num;
   puts("Guess a number 1 through 6");
   choice = gets.chomp;
-  p choice;
   if choice.to_i  == ran_num then
     puts("You guessed the correct number!");
   elsif choice == 'exit' then
     puts("Goodbye!");
   else
-    puts("Sorry! The computer guessed #{ran_num}")
+    puts("Sorry! The computer guessed #{ran_num}.")
   end
 
 end
